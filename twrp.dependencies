@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "github",
+    "repository": "boedhack99/kernel_xiaomi_spes",
+    "target_path": "kernel/xiaomi/spes",
+    "revision": "main"
+  }
+]
