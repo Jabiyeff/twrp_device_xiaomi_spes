@@ -1,0 +1,10 @@
+# Product
+ro.product.model=Redmi Note 11 Global
+ro.product.name=spes
+ro.build.product=spes
+ro.product.device=spes
+ro.vendor.product.device=spes
+
+persist.sys.isUsbOtgEnabled=true
+vendor.gatekeeper.disable_spu=true
+ro.adb.secure=0
