@@ -16,8 +16,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-include kernel/xiaomi/spes/Android.mk
-
 # API
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
