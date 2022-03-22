@@ -28,6 +28,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 LOCAL_PATH := device/xiaomi/mojito
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
