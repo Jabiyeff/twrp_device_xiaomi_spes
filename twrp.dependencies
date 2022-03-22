@@ -4,5 +4,11 @@
         "repository"    :   "LineageOS/android_hardware_qcom_bootctrl",
         "target_path"   :   "hardware/qcom-caf/bootctrl",
         "revision"      :   "lineage-18.1-caf"
+    },
+    {
+        "remote"        :   "github",
+        "repository"    :   "PixelExperience-Devices/kernel_xiaomi_mojito.git",
+        "target_path"   :   "kernel/xiaomi/mojito",
+        "revision"      :   "twelve"
     }
 ]
