@@ -65,7 +65,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/qcom-caf/bootctrl
+    hardware/qcom-caf/bootctrl \
+    vendor/qcom/opensource/commonsys-intf/display
 
 # Fastbootd
 PRODUCT_PACKAGES += \
