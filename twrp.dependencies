@@ -4,5 +4,11 @@
         "repository"    :   "PixelExperience-Devices/kernel_xiaomi_mojito.git",
         "target_path"   :   "kernel/xiaomi/mojito",
         "revision"      :   "twelve"
+    },
+    {
+        "remote"        :   "TeamWin",
+        "repository"    :   "android_device_qcom_twrp-common",
+        "target_path"   :   "device/qcom/twrp-common",
+        "revision"      :   "android-11"
     }
 ]

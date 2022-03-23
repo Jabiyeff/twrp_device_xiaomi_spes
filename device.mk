@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     android.hardware.fastboot@1.0-impl-mock.recovery
 
+# QCOM Decryption
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
