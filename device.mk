@@ -71,8 +71,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
-    android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
+    android.hardware.fastboot@1.0-impl-mock
 
 # QCOM Decryption
 PRODUCT_PACKAGES += \
