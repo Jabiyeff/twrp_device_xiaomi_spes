@@ -4,8 +4,8 @@
 
 # mount point  fstype  device                             device2                flags
 
-/metadata      ext4    /dev/block/bootdevice/by-name/metadata                    flags=display="Metadata";backup=1;wrappedkey
-/data          f2fs    /dev/block/bootdevice/by-name/userdata                    flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+#/metadata      ext4    /dev/block/bootdevice/by-name/metadata                    flags=display="Metadata";backup=1;wrappedkey
+#/data          f2fs    /dev/block/bootdevice/by-name/userdata                    flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
 /boot          emmc    /dev/block/bootdevice/by-name/boot                        flags=backup=1;flashimg=1;slotselect
 /dtbo          emmc    /dev/block/bootdevice/by-name/dtbo                        flags=backup=1;display="Dtbo";flashimg=1;slotselect
 /firmware      vfat    /dev/block/bootdevice/by-name/modem                       flags=display="Firmware";slotselect
@@ -23,4 +23,4 @@
 
 # Removable storage
 /usb_otg       vfat    /dev/block/sdg1                    /dev/block/sdg         flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
-/sdcard1       vfat    /devices/platform/soc/4784000.sdhci/mmc_host*             flags=display="MicroSD";storage;wipeingui;removable
+/data          f2fs    /dev/block/mmcblk1p1               /dev/block/mmcblk1
