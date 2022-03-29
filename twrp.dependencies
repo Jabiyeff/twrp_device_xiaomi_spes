@@ -1,9 +1,7 @@
 [
     {
-        "remote"        :   "github",
-        "repository"    :   "PixelExperience-Devices/kernel_xiaomi_mojito.git",
-        "target_path"   :   "kernel/xiaomi/mojito",
-        "revision"      :   "twelve"
+        "repository"    :   "kernel_xiaomi_spes",
+        "target_path"   :   "kernel/xiaomi/spes"
     },
     {
         "remote"        :   "TeamWin",

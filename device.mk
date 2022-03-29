@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Device Path
-LOCAL_PATH := device/xiaomi/mojito
+LOCAL_PATH := device/xiaomi/spes
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -102,4 +102,4 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/libqtivibratoreffect.so
 
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/mojito/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
+    $(OUT_DIR)/target/product/spes/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so

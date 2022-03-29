@@ -1,7 +1,7 @@
 # General
-ro.product.vendor.marketname=Redmi Note 10
-ro.product.board=mojito
-ro.board.platform=sm6150
+ro.product.vendor.marketname=Redmi Note 11
+ro.product.board=spes
+ro.board.platform=bengal
 
 # Dynamic Partitions
 ro.boot.dynamic_partitions=true

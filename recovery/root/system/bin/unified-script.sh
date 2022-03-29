@@ -1,28 +1,28 @@
 #!/system/bin/sh
 # This script is needed to automatically set device props.
 
-load_sunny()
+load_spesn()
 {
     resetprop "ro.product.model" "M2101K7AG"
     resetprop "ro.product.vendor.model" "M2101K7AG"
-    resetprop "ro.product.name" "sunny"
-    resetprop "ro.build.product" "sunny"
-    resetprop "ro.product.device" "sunny"
-    resetprop "ro.product.system.device" "sunny"
-    resetprop "ro.product.vendor.device" "sunny"
-    resetprop "ro.vendor.product.device" "sunny"
+    resetprop "ro.product.name" "spesn"
+    resetprop "ro.build.product" "spesn"
+    resetprop "ro.product.device" "spesn"
+    resetprop "ro.product.system.device" "spesn"
+    resetprop "ro.product.vendor.device" "spesn"
+    resetprop "ro.vendor.product.device" "spesn"
 }
 
-load_mojito()
+load_spes()
 {
     resetprop "ro.product.model" "M2101K7AI"
     resetprop "ro.product.vendor.model" "M2101K7AI"
-    resetprop "ro.product.name" "mojito"
-    resetprop "ro.build.product" "mojito"
-    resetprop "ro.product.device" "mojito"
-    resetprop "ro.product.system.device" "mojito"
-    resetprop "ro.product.vendor.device" "mojito"
-    resetprop "ro.vendor.product.device" "mojito"
+    resetprop "ro.product.name" "spes"
+    resetprop "ro.build.product" "spes"
+    resetprop "ro.product.device" "spes"
+    resetprop "ro.product.system.device" "spes"
+    resetprop "ro.product.vendor.device" "spes"
+    resetprop "ro.vendor.product.device" "spes"
 }
 
 project=$(getprop ro.boot.hwc)
@@ -30,13 +30,13 @@ echo $project
 
 case $project in
     "GLOBAL")
-        load_sunny
+        load_spesn
         ;;
     "INDIA")
-        load_mojito
+        load_spes
         ;;
     *)
-        load_sunny
+        load_spes
         ;;
 esac
 

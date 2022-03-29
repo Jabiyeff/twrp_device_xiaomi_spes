@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_mojito.mk
+    $(LOCAL_DIR)/twrp_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_mojito-eng
+    twrp_spes-eng

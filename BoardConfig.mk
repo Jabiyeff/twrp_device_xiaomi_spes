@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/mojito
+DEVICE_PATH := device/xiaomi/spes
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -55,32 +55,32 @@ AB_OTA_PARTITIONS := \
     vendor_boot
 
 # Kernel
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_PAGESIZE := 4096
-
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_BOOT_HEADER_VERSION := 3
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_SEPARATED_DTBO := false
+BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_TAGS_OFFSET := 0x00000100
+
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=default
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
-BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x880000
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
-BOARD_KERNEL_CMDLINE += service_locator.enable=1
-BOARD_KERNEL_CMDLINE += swiotlb=1
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
-BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
+BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x4a90000
+BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
+BOARD_KERNEL_CMDLINE += swiotlb=2048
 
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := mojito_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mojito
+TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -113,7 +113,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Platform
-TARGET_BOARD_PLATFORM := sm6150
+TARGET_BOARD_PLATFORM := bengal
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
