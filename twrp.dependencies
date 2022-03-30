@@ -1,7 +1,9 @@
 [
     {
-        "repository"    :   "kernel_xiaomi_spes",
-        "target_path"   :   "kernel/xiaomi/spes"
+        "remote"        :   "github",
+        "repository"    :   "OrangeFoxRecovery/kernel_xiaomi_spes",
+        "target_path"   :   "kernel/xiaomi/spes",
+        "revision"      :   "fox_11.0"
     },
     {
         "remote"        :   "TeamWin",
