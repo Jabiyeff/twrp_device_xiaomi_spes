@@ -143,6 +143,9 @@ TARGET_USES_MKE2FS := true
 # Treble
 BOARD_VNDK_VERSION := current
 
+# UEFI
+TARGET_USES_UEFI := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
