@@ -73,6 +73,7 @@ TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=4e00000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=default
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
