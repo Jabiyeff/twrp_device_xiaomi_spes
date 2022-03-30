@@ -33,9 +33,4 @@ vendor                                     /vendor         ext4    ro,barrier=1,
 product                                    /product        ext4    ro,barrier=1,discard                                            wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 /dev/block/bootdevice/by-name/userdata     /data           f2fs    noatime,nosuid,nodev,discard,fsync_mode=nobarrier          wait,check,encryptable=footer
 /dev/block/bootdevice/by-name/metadata     /metadata       ext4    noatime,nosuid,nodev,discard                               wait,check,formattable,wrappedkey
-/dev/block/mmcblk1p1                       /sdcard         vfat    nosuid,nodev                                               wait
-/dev/block/bootdevice/by-name/boot         /boot           emmc    defaults                                                   defaults
 /dev/block/bootdevice/by-name/misc         /misc           emmc    defaults                                                   defaults
-/dev/block/bootdevice/by-name/cust         /cust           ext4    ro,nosuid,nodev,barrier=1                                  wait,check
-/dev/block/bootdevice/by-name/rescue       /cache          ext4    nosuid,noatime,nodev,barrier=1                             wait
-
