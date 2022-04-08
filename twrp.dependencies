@@ -1,8 +1,8 @@
 [
     {
         "remote"        :   "github",
-        "repository"    :   "OrangeFoxRecovery/kernel_xiaomi_spes",
-        "target_path"   :   "kernel/xiaomi/spes",
+        "repository"    :   "OrangeFoxRecovery/kernel_xiaomi_juice",
+        "target_path"   :   "kernel/xiaomi/juice",
         "revision"      :   "fox_11.0"
     },
     {

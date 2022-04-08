@@ -17,6 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
+
 FDEVICE="spes"
 #set -o xtrace
 
