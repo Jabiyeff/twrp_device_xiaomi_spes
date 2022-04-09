@@ -87,7 +87,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
+TARGET_KERNEL_HEADERS := kernel/xiaomi/spes
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
