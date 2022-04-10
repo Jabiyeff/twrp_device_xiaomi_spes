@@ -43,7 +43,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery
+    android.hardware.boot@1.1-impl-qti.recovery \
+    bootctrl.bengal.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
