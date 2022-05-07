@@ -34,7 +34,7 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_GREEN_LED=0
-        export FOX_ENABLE_APP_MANAGER=0
+	export FOX_ENABLE_APP_MANAGER=0
    	export TW_DEFAULT_LANGUAGE="en"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
@@ -50,19 +50,23 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_XZ_UTILS=1
 	export OF_ENABLE_LPTOOLS=1
-        export OF_QUICK_BACKUP_LIST="/boot;/data;"
+	export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	export OF_PATCH_AVB20=1
-        export FOX_DELETE_AROMAFM=1
-        export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
+	export FOX_DELETE_AROMAFM=1
+	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
+
+    # Maintainer
+   	export OF_MAINTAINER=Jabiyeff
+   	export OF_MAINTAINER_AVATAR=~/ofrp/device/xiaomi/spes/addon/avatar.png
 
 	# use magisk 24.3 for the magisk addon
-	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v24.3.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/ofrp/device/xiaomi/spes/Magisk/Magisk-v24.3.zip
 
-        # OTA
-        export OF_KEEP_DM_VERITY=1
-        export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-        export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
-        export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
+	# OTA
+	export OF_KEEP_DM_VERITY=1
+	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
+	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
+	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 
 	# screen settings
 	export OF_SCREEN_H=2400
@@ -75,9 +79,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# maximum permissible splash image size (in kilobytes); do *NOT* increase!
 	export OF_SPLASH_MAX_SIZE=130
 
-        # -- Enable CCACHE --
-        export USE_CCACHE=1
-        export CCACHE_EXEC=/usr/bin/ccache
+	# -- Enable CCACHE --
+	export USE_CCACHE=1
+	export CCACHE_EXEC=/usr/bin/ccache
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
