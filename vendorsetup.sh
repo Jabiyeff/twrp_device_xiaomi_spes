@@ -57,7 +57,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
     # Maintainer
    	export OF_MAINTAINER=Jabiyeff
-   	export OF_MAINTAINER_AVATAR=~/ofrp/device/xiaomi/spes/addon/avatar.png
 
 	# use magisk 24.3 for the magisk addon
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/ofrp/device/xiaomi/spes/addon/Magisk-v24.3.zip
