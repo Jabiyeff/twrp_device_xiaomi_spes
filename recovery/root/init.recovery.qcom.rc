@@ -25,4 +25,4 @@ on boot
     start health-hal-2-1
     start variant-script
     start vendor.qti.vibrator
-    setprop sys.usb.config adb
+    setprop sys.usb.config mtp,adb
