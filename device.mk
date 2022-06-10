@@ -54,7 +54,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
 # Init scripts
@@ -117,7 +116,6 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
-TW_EXCLUDE_APEX := true
 
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
