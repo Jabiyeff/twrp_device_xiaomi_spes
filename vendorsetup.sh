@@ -60,7 +60,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_VERSION="R11.1_3"
 
 	# use magisk 24.3 for the magisk addon
-	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/ofrp/device/xiaomi/spes/addon/Magisk-v24.3.zip
+	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/ofrp/device/xiaomi/spes/addon/Magisk-v25.0.zip
 
 	# OTA
 	export OF_KEEP_DM_VERITY=1
