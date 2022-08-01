@@ -56,17 +56,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 
         # Maintainer
-   	export OF_MAINTAINER=Jabiyeff
-        export FOX_VERSION="R11.1_A12.1"
+	export OF_MAINTAINER=Jabiyeff
+	export FOX_VERSION="R11.1"
 
 	# Use magisk 25.2 for the magisk addon
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/ofrp/device/xiaomi/spes/addon/Magisk-v25.2.zip
-
-	# OTA
-	export OF_KEEP_DM_VERITY=1
-	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
-	export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
-	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 
 	# Screen settings
 	export OF_SCREEN_H=2400
