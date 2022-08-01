@@ -57,6 +57,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Fastbootd
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
 # Init scripts
